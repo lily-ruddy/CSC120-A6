@@ -84,7 +84,7 @@ public class House extends Building{
   
 
   public static void main(String[] args) {
-    House baldwin = new House("Baldwin House", "15 Bedford Terrace", 4, false);
+    House baldwin = new House("Baldwin House", "15 Bedford Terrace", 5, false);
 
     /* Move in and out */
     baldwin.moveIn("Lily");
