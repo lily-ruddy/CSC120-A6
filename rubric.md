@@ -52,10 +52,10 @@ ___YES__ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
       __YES___ Adheres to Java conventions on naming & capitalization
 
-      __YES__ Methods & variables all have clear and accurate names
+      __YES___ Methods & variables all have clear and accurate names
 
-      ___YES__ Methods avoid confusing side effects
+      __YES___ Methods avoid confusing side effects
 
-_____ 1 pt: All required files included with submission (including completed `rubric.md` file)
+___YES__ 1 pt: All required files included with submission (including completed `rubric.md` file)
 
-_____ 1 pt: `reflection.md` contains your reflection on the assignment
+___YES__ 1 pt: `reflection.md` contains your reflection on the assignment
