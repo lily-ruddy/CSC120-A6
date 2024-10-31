@@ -7,6 +7,13 @@ public class House extends Building{
   private boolean hasDiningRoom;
 
   // Constructor:
+  /**
+   * Constructor for the House class.
+   * @param name; Name of the house.
+   * @param address; Address of the house
+   * @param nFloors; The number of floors in the house. Must be greater than or equal to 1.
+   * @param hasDiningRoom; True = has a dining room, False = doesn't have a dining room
+   */
   public House(String name, String address, int nFloors, boolean hasDiningRoom) {
     super(name, address, nFloors); // extends Building 
     System.out.println("You have built a house: 🏠");
