@@ -18,7 +18,7 @@ public class House extends Building{
     super(name, address, nFloors); // extends Building 
     System.out.println("You have built a house: 🏠");
     this.residents = new ArrayList<String>();
-    this.hasDiningRoom = false; // default no dining room
+    this.hasDiningRoom = hasDiningRoom; 
   }
 
   // Getters:
