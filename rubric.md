@@ -34,7 +34,7 @@ ___YES__ 1 pt: The `Cafe` class includes the requested attributes
 
 ___YES__ 1 pt: The `Cafe` class keeps the inventory up to date, based on sales
 
-_____ 1 pt: The `Cafe` class uses the `restock(...)` method to avoid running out of inventory.
+___YES__ 1 pt: The `Cafe` class uses the `restock(...)` method to avoid running out of inventory.
 
 
 

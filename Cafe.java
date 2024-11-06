@@ -69,29 +69,44 @@ public class Cafe extends Building{
     public void sellCoffee(int size, int nSugarPackets, int nCreams){
         /* Checks to see if there are enough cups */
         if(nCups>0 & size <= this.nCoffeeOunces & nSugarPackets <= this.nSugarPackets & nCreams <= this.nCreams){
-            System.out.println("** Making coffee **");
+            System.out.println("The " + this.name + " brewed a " +size + "-ounce coffee with " + nSugarPackets + " sugar packets and " + nCreams + " creams.");
             this.nCups = this.nCups -1; // subtracts one cup
             this.nCoffeeOunces = this.nCoffeeOunces - size; // subtracts the coffee ounces
             this.nSugarPackets = this.nSugarPackets - nSugarPackets; // subtracts the sugar packets
             this.nCreams = this.nCreams - nCreams; // subtracts the creams 
 
         } else{
-            throw new RuntimeException("There isn't enough inventory at "+ this.name +" to make the coffee. Please restock.");
-        }
+            System.out.println("----RESTOCKING---");
+            this.restock(size, nSugarPackets, nCreams, 15); // restocks the amount that we need to make the coffee
+            System.out.println("The " + this.name + " brewed a " +size + "-ounce coffee with " + nSugarPackets + " sugar packets and " + nCreams + " creams.");
+        } 
     }
 
+    /**
+     * Restocks the inventory of the cafe when there are not enough supplies to make a coffee.
+     * @param int nCoffeeOunces; Number of ounces of coffee restocked  
+     * @param int nSugarPackets; Number of sugar packets restocked 
+     * @param int nCreams; Number of splashes of creams restocked
+     * @param int nCups; Number of cups restocked
+     */
+    private void restock(int nCoffeeOunces, int nSugarPackets, int nCreams, int nCups){
+        this.nCups = this.nCups + nCups; // restocks cups
+        this.nCoffeeOunces = this.nCoffeeOunces + nCoffeeOunces; // restocks the coffee ounces
+        this.nSugarPackets = this.nSugarPackets + nSugarPackets; // restocks the sugar packets
+        this.nCreams = this.nCreams + nCreams; // restocks the creams 
+    }
 
     
     public static void main(String[] args) {
         /* Creating cafe */
         System.out.println("-----------------------------------------------------");
-        Cafe campusCafe = new Cafe("Campus Center Cafe", "Smith College Campus Center 100 Elm St",3, 100, 45 , 45, 15);
+        Cafe campusCafe = new Cafe("Campus Center Cafe", "Smith College Campus Center 100 Elm St",3, 100, 45 , 10, 15);
         System.out.println(campusCafe);
 
         /* Selling coffee */
         System.out.println("-----------------------------------------------------");
-        campusCafe.sellCoffee(10, 3, 2);
-        
+        campusCafe.sellCoffee(10, 3, 2); // sell
+        campusCafe.sellCoffee(15, 1, 11); // restock and sell 
     }
     
 }
