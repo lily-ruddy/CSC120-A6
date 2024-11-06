@@ -26,7 +26,7 @@ public class House extends Building{
    * Getter for if the house has a dining room.
    * @return boolean; True = has a dining room, False = doesn't have a dining room
    */
-  public boolean hasDiningRoom(){
+  public boolean getHasDiningRoom(){
     return this.hasDiningRoom;
   }
 
@@ -34,7 +34,7 @@ public class House extends Building{
    * Getter for the number of residents in the house.
    * @return int size, size of the house
    */
-  public int nResidents(){
+  public int getNResidents(){
     return this.residents.size();
   }
   

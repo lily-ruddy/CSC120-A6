@@ -10,7 +10,7 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 ## Assignment Points:
 
-___PART__ 1 pt: The `House`, `Library`, and `Cafe` classes all `extend` the `Building` class.
+___YES__ 1 pt: The `House`, `Library`, and `Cafe` classes all `extend` the `Building` class.
 
 ### Level 1: `House.java` (3 pts)
 
@@ -30,9 +30,9 @@ ___YES__ 1 pt: The `Library` class implements the requested additional methods (
 
 ### Level 3: `Cafe.java` (3 pts)
 
-_____ 1 pt: The `Cafe` class includes the requested attributes
+___YES__ 1 pt: The `Cafe` class includes the requested attributes
 
-_____ 1 pt: The `Cafe` class keeps the inventory up to date, based on sales
+___YES__ 1 pt: The `Cafe` class keeps the inventory up to date, based on sales
 
 _____ 1 pt: The `Cafe` class uses the `restock(...)` method to avoid running out of inventory.
 
